@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "webpack",
+    "dev": "webpack-dev-server --progress --colors",
+    "prestart": "webpack --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
