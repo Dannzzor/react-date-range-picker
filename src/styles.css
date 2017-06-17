@@ -1,0 +1,170 @@
+body {
+  background: slategray;
+}
+
+.date-range-picker {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: #747576;
+  background: #fff;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  border-radius: 2px;
+  padding: 30px;
+  width: 650px;
+  margin: 50px auto;
+}
+
+.content {
+  display: inline-flex;
+}
+
+.date-ranges {
+  display: inline-flex;
+}
+
+.start-date-box, .end-date-box {
+  margin-right: 30px;
+}
+
+.start-date,
+.end-date,
+.start-date-label,
+.end-date-label {
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.start-date,
+.end-date {
+  float: right;
+  text-align: right;
+  color: #54B3AC;
+}
+
+.calendar {
+  width: 210px;
+}
+
+.calendar .heading {
+  margin: 15px 0;
+  font-size: 18px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.previous-month,
+.next-month {
+  box-sizing: border-box;
+  color: #54B3AC;
+  border: 2px solid #54B3AC;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  padding-left: 4px;
+}
+
+.next-month {
+  padding-left: 6px;
+}
+
+.previous-month.disabled,
+.next-month.disabled {
+  color: #aaa;
+  border-color: #aaa;
+}
+
+ul.days-heading {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+ul.days-heading li {
+  width: 30px;
+  text-align: center;
+}
+
+ul.days {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+ul.days li {
+  margin-top: 10px;
+  padding: 4px 0;
+  width: 30px;
+  text-align: center;
+}
+
+
+ul.days li.selected {
+  background: #5BEBDF;
+}
+
+ul.days li.start,
+ul.days li.end {
+  background: #54B3AC;
+  color: #fff;
+}
+
+.controls {
+  border-left: 2px solid #ccc;
+}
+
+.controls ul {
+  margin: 0;
+  padding: 0 30px;
+  list-style-type: none;
+}
+
+.controls li {
+  font-size: 18px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.controls li.selected {
+  border-bottom: 2px solid #99E4E4;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons .btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn.cancel {
+  background: slategray;
+  margin-right: 15px;
+}
+
+.btn.update {
+  background: #54B3AC;
+}
